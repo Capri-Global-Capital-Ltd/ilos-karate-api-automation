@@ -1,0 +1,14 @@
+api-gateway
+
+/clients/v1/orders
+/clients/v1/orders/status
+/clients/v1/products/list
+/clients/v1/products/detail
+/clients/v1/products/stock
+
+admin-api
+
+/login
+/clients/list
+/brands/list
+/categories/list

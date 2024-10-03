@@ -1,0 +1,5 @@
+https://medium.com/@ivangsa/from-manual-to-contract-testing-with-karatedsl-and-karateide-i-5884f1732680
+
+https://priyankab85.medium.com/cheat-sheet-for-karate-assertions-and-matching-d248383546e0
+
+https://medium.com/@sonaldwivedi/karate-api-automation-assertions-using-matcher-apis-f3c9fbd96fb0
