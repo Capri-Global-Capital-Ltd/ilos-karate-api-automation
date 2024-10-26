@@ -9,6 +9,7 @@ function() {
     if (env == 'stg') {
         BASE_URL = 'https://ilosapi-uat.capriglobal.in/ilosuser/v1';
         BASE_URL1 = 'https://ilosapi-uat.capriglobal.in/ilos/v1';
+		BASE_URL2 = 'https://ilosapi-uat.capriglobal.in/ilos/v2';
         TEST_DATA = 'file:src/test/resources/stg/';
 		TEST_DATA1 = 'file:src/test/resources/';
     } else if (env == 'dev') {
@@ -24,7 +25,8 @@ function() {
         REQUEST: 'classpath:src/test/resources/requests/',
         RESPONSE: 'classpath:src/test/resources/responses/',
         BASE_URL: BASE_URL,
-		BASE_URL1: BASE_URL1
+		BASE_URL1: BASE_URL1,
+		BASE_URL2: BASE_URL2
     };
 
     karate.log('karate.env system property is: ', env);

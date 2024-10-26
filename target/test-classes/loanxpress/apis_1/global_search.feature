@@ -1,4 +1,4 @@
-Feature: Login in a website
+Feature: User Search via GLOBAL SEARCH
   
   Background:
    * url BASE_URL1

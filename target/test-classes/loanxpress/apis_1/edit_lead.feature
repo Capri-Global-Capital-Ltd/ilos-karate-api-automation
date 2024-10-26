@@ -1,7 +1,7 @@
-Feature: User edit the lead
+Feature: User edits the lead details
   
   Background:
-    * url BASE_URL1
+    * url BASE_URL2
     * print 'print 1'
     * def result = call read('classpath:loanxpress/apis_1/login.feature')
     * def token = result.response.dt.token
@@ -11,13 +11,17 @@ Feature: User edit the lead
     * print 'Extracted ID1:', id1
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity1 @tc0003
-  Scenario Outline: Editing the lead
+  @Sanity1 @tc0005
+  Scenario Outline: Editing lead detail
+    * def expectedRoi = <expected_roi>
+    * def requestBody = read(TEST_DATA1 + 'requests/edit_lead_req.json')
+    * requestBody.primary.inquiry_details.expected_roi = expectedRoi
     Given path '/assignee/lead/' + id1
-    When method GET
+    And request requestBody
+    When method PATCH
     Then status <statuscode>
     And print 'Response:', response
 
   Examples:
-    | statuscode |
-    | 200        |
+    | expected_roi | statuscode |
+    | "16.00"      | 200        |

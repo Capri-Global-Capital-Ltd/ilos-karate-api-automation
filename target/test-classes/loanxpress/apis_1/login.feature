@@ -1,4 +1,4 @@
-Feature: Login in a website
+Feature: User login in a website
   Background:
     * url BASE_URL
     * print 'print 2'

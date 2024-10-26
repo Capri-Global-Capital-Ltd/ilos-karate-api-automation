@@ -1,0 +1,20 @@
+{
+    "primary": {
+        "inquiry_details": {
+            "portfolio_type": "home loan",
+            "entity_type": "individual",
+            "source": "Branch",
+            "sub_source": {
+                "name_of_rm": "Rahul Chaudhary"
+            },
+            "loan_branch": "LUCKNOW_HL_1",
+            "loan_purpose": "plot purchase and construction",
+            "transaction_type": "plot purchase and construction",
+            "product_type": "home loan variable",
+            "loan_requirement": "500000",
+            "loan_tenor_in_months": "180",
+            "expected_roi": "15.00",
+            "special_program_code": "none"
+        }
+    }
+}
