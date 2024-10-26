@@ -1,4 +1,4 @@
-Feature: User fetch list of pending leads
+Feature: User List of pending leads
   
   Background:
     * url BASE_URL1
