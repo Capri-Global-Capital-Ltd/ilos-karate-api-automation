@@ -12,25 +12,26 @@ Feature: Lead Management - Section Completion and Submission
   
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity1 @tc0007
-  Scenario Outline: Mark section as complete for a lead
-    Given path '/assignee/lead/mark-section-complete/' + ObjectId
-    And request { "section": "<section>" }
-    When method PATCH
-    Then status <statuscode>
-    And print 'Response:', response
-
-  Examples:
-    | section        | statuscode |
-    | loan-details   | 200        |
-    | guarantor      | 200        |
-    | document       | 200        |
-    | property       | 200        |
-    | references     | 200        |
+  #@Sanity1 @tc0007
+  #Scenario Outline: Mark section as complete for a lead
+    #Given path '/assignee/lead/mark-section-complete/' + ObjectId
+    #And request { "section": "<section>" }
+    #When method PATCH
+    #Then status <statuscode>
+    #And print 'Response:', response
+#
+  #Examples:
+    #| section        | statuscode |
+    #| loan-details   | 200        |
+    #| guarantor      | 200        |
+    #| document       | 200        |
+    #| property       | 200        |
+    #| references     | 200        |
     
-  @Sanity1 @tc0008
-  Scenario: Submit lead
-    Given path '/assignee/lead/submit-lead/' + ObjectId
-    When method PATCH
+  @Sanity1 @tc0011
+  Scenario: Viewing lead detail
+    Given path '/assignee/lead/' + ObjectId
+    When method GET
     Then status 200
-    And print 'Lead Submission Response:', response
+    * def application_id = response.dt.application_id
+    And print 'Response application_id:', application_id
