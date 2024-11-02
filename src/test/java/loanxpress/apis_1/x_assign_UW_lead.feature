@@ -14,7 +14,7 @@ Feature: User filters and assigns a lead from UW
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
     
- @Sanity1 @tc00131
+ @Sanity1 @tc00010
   Scenario: Self-assign lead
     And print 'Response ObjectId:', obj_id
     Given path '/underwriter/lead/self_assign/' + obj_id 
