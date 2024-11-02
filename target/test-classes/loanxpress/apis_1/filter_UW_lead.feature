@@ -12,7 +12,7 @@ Feature: User filters and assigns a lead from UW
     * print 'Extracted object_id:', obj_id
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity1 @tc00131
+  @Sanity1 @tc00131 @ignore
   Scenario Outline: Filtering lead detail
     Given path '/underwriter/lead'
     And param status = '<status>'

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestRunner" time="19.094" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestRunner" time="17.208" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.12+7-Ubuntu-1ubuntu220.04"/>
@@ -60,5 +60,5 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="karate.env" value="stg"/>
   </properties>
-  <testcase classname="TestRunner" name="JUnitTestRunner" time="19.094"/>
+  <testcase classname="TestRunner" name="JUnitTestRunner" time="17.208"/>
 </testsuite>

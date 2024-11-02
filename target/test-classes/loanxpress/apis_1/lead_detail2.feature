@@ -13,6 +13,7 @@ Feature: User fetch the submitted lead details
     Given path '/assignee/lead'
       And param status = '<status>'
       And param page_size = 100
+      And param lead_sub_status = '<lead_sub_status>'
     When method GET
     Then status <statuscode>
     * def lastId = response.dt[response.dt.length - 1]._id
@@ -21,6 +22,5 @@ Feature: User fetch the submitted lead details
     And print 'Response application_id:', lastap_no
 
   Examples:
-    | statuscode |status|
-    | 200        | SUBMITTED |
-    
+    | statuscode | status     | lead_sub_status     |
+    | 200        | SUBMITTED  | PENDING_FOR_DDE     |
