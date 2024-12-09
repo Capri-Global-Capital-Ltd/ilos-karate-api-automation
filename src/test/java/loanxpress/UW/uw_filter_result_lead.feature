@@ -1,14 +1,27 @@
-Feature: User fetch the lead details
-  
+Feature: Filter the assigned lead of UW
+
   Background:
     * url BASE_URL1
-    * print 'print 1'
     * def result = call read('classpath:loanxpress/apis_1/login.feature')
     * def token = result.response.dt.token
-    * print 'print 1 token', token
+    * print 'Token:', token
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity1 @tc0013 @UW
+
+  @Sanity1 @tc0018
+ Scenario Outline: Filtering lead detail
+    Given path '/underwriter/lead/assigned/list'
+    And param application_id = APP_ID
+    When method GET
+    Then status <statuscode>
+    And print 'Response:', response
+
+  Examples:
+    | status           | statuscode |
+    | PENDING_FOR_DDE  | 200        |
+    
+    
+    @Sanity1 @tc0013 @UW
   Scenario Outline: Viewing lead detail
     Given path '/assignee/lead/' + OBJ_ID
     When method GET
@@ -21,11 +34,16 @@ Feature: User fetch the lead details
   Examples:
     | statuscode |
     | 200        |
+
     
-    
-      @Sanity1 @tc00011 @UW
-  Scenario: Submit UW lead - Step 1
-    Given path '/application/generate-pdf/' + APP_ID
+       @Sanity1 @tc0014
+  Scenario Outline: Viewing lead result of UW
+    Given path '/underwriter/lead/result/' + OBJ_ID
     When method GET
-    Then status 200
-    * print 'Status code is:', responseStatus  
+    Then status <statuscode>
+   
+
+  Examples:
+    | statuscode |
+    | 200        |
+    

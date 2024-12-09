@@ -8,13 +8,12 @@ Feature: User fetch the lead details
     * print 'print 1 token', token
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity1 @tc0003
-  Scenario Outline: Viewing lead detail
+  @Sanity1 @tc0013 @UW
+  Scenario Outline: Viewing dedupe lead detail
     Given path '/assignee/lead/' + OBJ_ID
     When method GET
     Then status <statuscode>
-    And print 'Response application_id:', response.dt.application_id
-
+  
   Examples:
     | statuscode |
     | 200        |

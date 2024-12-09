@@ -13,8 +13,8 @@ function() {
         TEST_DATA = 'file:src/test/resources/stg/';
 		TEST_DATA1 = 'file:src/test/resources/';
 		TEST_DATA1 = 'file:src/test/resources/';
-		OBJ_ID='6725d716321bd0cf0ccfff8d';
-		APP_ID='911039_45';
+		OBJ_ID='672f056499cbe99929d8eba0';
+		APP_ID='911039_56';
 		
     } else if (env == 'dev') {
         BASE_URL = 'https://reqres.in/api';

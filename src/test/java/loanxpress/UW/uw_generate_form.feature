@@ -7,7 +7,7 @@ Feature: User edits the lead details
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
   @Sanity1 @tc00011 @UW
-  Scenario: Submit UW lead - Step 1
+  Scenario: Submit UW lead - Step 2
     Given path '/application/generate-pdf/' + APP_ID
     When method GET
     Then status 200
