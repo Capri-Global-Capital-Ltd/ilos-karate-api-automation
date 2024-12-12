@@ -27,7 +27,7 @@ public class TestRunner {
 				 "src/test/java/loanxpress/UW/uw_submit_lead.feature",
 				 "src/test/java/loanxpress/UW/dedupe_lead_detail.feature",
 				 "src/test/java/loanxpress/UW/search_customer.feature",
-				 "src/test/java/loanxpress/UW/dedupe_submit_lead.feature",
+				 "src/test/java/loanxpress/UW/dedupe_submit_lead.feature"
 
 				
                 // "src/test/java/loanxpress/IPA_OBL/IPA_lead_detail.feature",
