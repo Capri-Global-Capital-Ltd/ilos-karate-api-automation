@@ -28,5 +28,7 @@ Feature: User edits the lead details
     Given path '/underwriter/lead/dedupe-submit/' + OBJ_ID
     And request {"dpd":0}
     When method POST
-    Then status 200
+    Then status 400
+    * def expectedResponse = read(TEST_DATA1 + 'responses/dedupe_submit_res.json')
+    And match response == expectedResponse
     

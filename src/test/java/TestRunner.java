@@ -14,9 +14,9 @@ public class TestRunner {
 		Results results = Runner.path(
 
 				"src/test/java/loanxpress/apis_1/login.feature",
-				"src/test/java/loanxpress/apis_1/master_data.feature"
+				"src/test/java/loanxpress/apis_1/master_data.feature",
 			
-				,"src/test/java/loanxpress/apis_1/open_listing.feature",
+				"src/test/java/loanxpress/apis_1/open_listing.feature",
 				"src/test/java/loanxpress/apis_1/lead_detail.feature",
 				"src/test/java/loanxpress/apis_1/edit_lead.feature",
 				"src/test/java/loanxpress/apis_1/mark_section.feature",
@@ -26,11 +26,14 @@ public class TestRunner {
 				"src/test/java/loanxpress/UW/uw_lead_detail.feature",
 				"src/test/java/loanxpress/UW/uw_filter_result_lead.feature",
 				"src/test/java/loanxpress/UW/uw_generate_form.feature",
-				"src/test/java/loanxpress/UW/uw_submit_lead.feature",
-				"src/test/java/loanxpress/UW/dedupe_lead_detail.feature",
-				"src/test/java/loanxpress/UW/search_customer.feature",
-				"src/test/java/loanxpress/UW/dedupe_submit_lead.feature",
-                "src/test/java/loanxpress/IPA_OBL/IPA_OBL_submit.feature"
+				 "src/test/java/loanxpress/UW/uw_submit_lead.feature",
+
+				 "src/test/java/loanxpress/UW/dedupe_lead_detail.feature",
+				 "src/test/java/loanxpress/UW/search_customer.feature",
+				 "src/test/java/loanxpress/UW/dedupe_submit_lead.feature"
+				
+                //  "src/test/java/loanxpress/IPA_OBL/IPA_lead_detail.feature",
+                //  "src/test/java/loanxpress/IPA_OBL/IPA_OBL_submit.feature"
 
 		).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
