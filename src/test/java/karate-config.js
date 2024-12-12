@@ -16,7 +16,20 @@ function() {
 		OBJ_ID='672f056499cbe99929d8eba0';
 		APP_ID='911039_56';
 		
-    } else if (env == 'dev') {
+    }
+    else if (env == 'prod') {
+
+        BASE_URL = 'https://loanxpress-api.caprihomeloans.com/ilosuser/v1';
+        BASE_URL1 = 'https://ilosapi-uat.capriglobal.in/ilos/v1';
+		BASE_URL2 = 'https://ilosapi-uat.capriglobal.in/ilos/v2';
+        TEST_DATA = 'file:src/test/resources/stg/';
+		TEST_DATA1 = 'file:src/test/resources/';
+		TEST_DATA1 = 'file:src/test/resources/';
+		OBJ_ID='672f056499cbe99929d8eba0';
+		APP_ID='911039_56';
+		
+    }
+    else if (env == 'dev') {
         BASE_URL = 'https://reqres.in/api';
         BASE_URL1 = 'https://bre-dev.capriglobal.in';
     } else {
