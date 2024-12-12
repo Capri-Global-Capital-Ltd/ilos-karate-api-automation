@@ -8,12 +8,12 @@ Feature: Fetch the master data from pragati
     * print 'print 1 token', token
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
-  @Sanity @tc0003
+  @Sanity1 @tc0003
   Scenario Outline: Viewing the master data
-    Given path '/assignee/lead/'
+    Given path '/proxy/pragati/master-data'
     When method GET
     Then status <statuscode>
-    And print 'Response application_id:', response.dt.application_id
+    
 
   Examples:
     | statuscode |

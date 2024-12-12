@@ -13,9 +13,9 @@ public class TestRunner {
 	public void JUnitTestRunner() {
 		Results results = Runner.path(
 
-				"src/test/java/loanxpress/apis_1/login.feature"
-			//	master_data.feature
-				
+				"src/test/java/loanxpress/apis_1/login.feature",
+				"src/test/java/loanxpress/apis_1/master_data.feature"
+			
 				,"src/test/java/loanxpress/apis_1/open_listing.feature",
 				"src/test/java/loanxpress/apis_1/lead_detail.feature",
 				"src/test/java/loanxpress/apis_1/edit_lead.feature",
