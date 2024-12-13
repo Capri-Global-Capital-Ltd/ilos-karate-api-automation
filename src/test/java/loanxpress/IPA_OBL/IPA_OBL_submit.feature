@@ -1,4 +1,4 @@
-Feature: User fetches the lead details and initiate novel
+Feature: User initiate novel for bank statement and submits the IPA lead
 
   Background:
     * url BASE_URL1

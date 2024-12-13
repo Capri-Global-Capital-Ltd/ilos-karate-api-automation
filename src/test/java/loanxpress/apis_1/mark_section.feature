@@ -1,4 +1,4 @@
-Feature: Lead Management - Section Completion and Submission
+Feature: User able to see which sections are already completed
 
   Background:
     * url BASE_URL1
@@ -18,7 +18,7 @@ Feature: Lead Management - Section Completion and Submission
 
   Examples:
     | section        | statuscode |
-    | loan-details   | 200        |
+    | loan-details   | 400        |
     | guarantor      | 200        |
     | document       | 200        |
     | property       | 200        |

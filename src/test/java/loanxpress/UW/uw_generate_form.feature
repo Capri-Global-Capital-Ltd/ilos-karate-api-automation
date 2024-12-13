@@ -1,4 +1,4 @@
-Feature: User edits the lead details
+Feature: User generate the application form in Underwriting module
 
   Background:
     * url BASE_URL1
@@ -11,4 +11,4 @@ Feature: User edits the lead details
     Given path '/application/generate-pdf/' + APP_ID
     When method GET
     Then status 200
-    * print 'Status code is:', responseStatus  
+    * print 'Status code is:', responseStatus

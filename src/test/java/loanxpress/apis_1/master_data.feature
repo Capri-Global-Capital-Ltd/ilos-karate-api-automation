@@ -1,4 +1,4 @@
-Feature: Fetch the master data from pragati
+Feature: User fetch the master data from pragati
   
   Background:
     * url BASE_URL1

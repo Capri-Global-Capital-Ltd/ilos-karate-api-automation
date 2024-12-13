@@ -1,4 +1,4 @@
-Feature: User fetch the lead details and create a customer
+Feature: User search for customer and create a customer in Dedupe
 
   Background:
     * url BASE_URL1

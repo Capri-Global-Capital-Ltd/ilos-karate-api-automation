@@ -1,4 +1,4 @@
-Feature: User edits the lead details
+Feature: User submit the lead from Dedupe module
 
   Background:
     * url BASE_URL1

@@ -1,4 +1,4 @@
-Feature: User List of pending leads
+Feature: List of OPEN leads of CPU module
   
   Background:
     * url BASE_URL1

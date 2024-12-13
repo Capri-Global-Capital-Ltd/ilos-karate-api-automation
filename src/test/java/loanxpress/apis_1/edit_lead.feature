@@ -1,4 +1,4 @@
-Feature: User edits the lead details
+Feature: User edits the lead details for CPU module
   
   Background:
     * url BASE_URL2

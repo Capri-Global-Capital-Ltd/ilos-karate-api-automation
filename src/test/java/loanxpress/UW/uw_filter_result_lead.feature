@@ -1,4 +1,4 @@
-Feature: Filter the assigned lead of UW
+Feature: User Filtering the lead of Underwriting module
 
   Background:
     * url BASE_URL1
