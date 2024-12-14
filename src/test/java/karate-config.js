@@ -44,7 +44,8 @@ function() {
     APP_ID: APP_ID,
     BASE_URL: BASE_URL,
     BASE_URL1: BASE_URL1,
-    BASE_URL2: BASE_URL2
+    BASE_URL2: BASE_URL2,
+    BASE_URL_PD: BASE_URL_PD
     };
     
     karate.log('karate.env system property is: ', env);
