@@ -13,8 +13,8 @@ function() {
         TEST_DATA = 'file:src/test/resources/stg/';
 		TEST_DATA1 = 'file:src/test/resources/';
 		TEST_DATA1 = 'file:src/test/resources/';
-		OBJ_ID='672f057d99cbe99929d8eba3';
-		APP_ID='911039_53';
+		OBJ_ID='6731da966d3dec088f89270c';
+		APP_ID='911039_61';
 		
     }
     else if (env == 'prod') {
@@ -24,9 +24,7 @@ function() {
 		BASE_URL2 = 'https://ilosapi-uat.capriglobal.in/ilos/v2';
         TEST_DATA = 'file:src/test/resources/stg/';
 		TEST_DATA1 = 'file:src/test/resources/';
-		TEST_DATA1 = 'file:src/test/resources/';
-		OBJ_ID='672f056499cbe99929d8eba0';
-		APP_ID='911039_56';
+		TEST_DATA1 = 'file:src/test/resources/'
 		
     }
     else if (env == 'dev') {
