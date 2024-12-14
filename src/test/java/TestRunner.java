@@ -35,6 +35,8 @@ public class TestRunner {
                  // "src/test/java/loanxpress/PD/pd_view_processor.feature",
                 // "src/test/java/loanxpress/PD/pd_view_leaddetail.feature",
 			//	     "src/test/java/loanxpress/PD/pd_lead_processor.feature"
+				// "src/test/java/loanxpress/PD/pd_lead_config.feature"
+			 "src/test/java/loanxpress/PD/pd_check_branch.feature"
 				 
 					
 
