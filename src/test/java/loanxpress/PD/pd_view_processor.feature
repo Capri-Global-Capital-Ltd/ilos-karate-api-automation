@@ -1,4 +1,4 @@
-Feature: User retrieves my applications list for CPU module
+Feature: User view the list of all processors in cpu
 
   Background:
      * url BASE_URL_PD

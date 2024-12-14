@@ -28,13 +28,15 @@ public class TestRunner {
 				//  "src/test/java/loanxpress/UW/dedupe_lead_detail.feature",
 				//  "src/test/java/loanxpress/UW/search_customer.feature",
 				//  "src/test/java/loanxpress/UW/dedupe_submit_lead.feature",
-
-				
                 // "src/test/java/loanxpress/IPA_OBL/IPA_lead_detail.feature",
                 //  "src/test/java/loanxpress/IPA_OBL/IPA_OBL_submit.feature"
+
 			     //	"src/test/java/loanxpress/PD/pd_assign_lead.feature",
-                   // "src/test/java/loanxpress/PD/pd_view_processor.feature"
+                 // "src/test/java/loanxpress/PD/pd_view_processor.feature",
+                // "src/test/java/loanxpress/PD/pd_view_leaddetail.feature",
+			//	     "src/test/java/loanxpress/PD/pd_lead_processor.feature"
 				 
+					
 
 		).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
