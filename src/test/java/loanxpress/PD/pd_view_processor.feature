@@ -1,16 +1,16 @@
-Feature: User self assign the lead from pd module
+Feature: User retrieves my applications list for CPU module
 
   Background:
-    * url BASE_URL_PD
+     * url BASE_URL_PD
     * def result = call read('classpath:loanxpress/apis_1/login.feature')
     * def token = result.response.dt.token
     * print 'Token:', token
     * configure headers = { Authorization: '#(token)', Content-Type: 'application/json' }
 
   @Sanity1 @tc0008
-  Scenario: Submit lead
-    Given path '/application/assign'
-    And request { appId: '#(APP_ID)' }
-    When method POST
+  Scenario: Retrieve list of user applications
+    Given path '/application/list/myApplication/PROCESSOR/0/10'
+    When method GET
     Then status 200
-    And print 'Lead Submission Response:', response
+    And print 'Response:', response
+  

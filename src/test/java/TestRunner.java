@@ -13,7 +13,7 @@ public class TestRunner {
 	public void JUnitTestRunner() {
 		Results results = Runner.path(
 
-				 "src/test/java/loanxpress/apis_1/login.feature"
+				 "src/test/java/loanxpress/apis_1/login.feature",
 				// "src/test/java/loanxpress/apis_1/master_data.feature",
 				// "src/test/java/loanxpress/apis_1/open_listing.feature",
 				// "src/test/java/loanxpress/apis_1/lead_detail.feature",
@@ -32,6 +32,9 @@ public class TestRunner {
 				
                 // "src/test/java/loanxpress/IPA_OBL/IPA_lead_detail.feature",
                 //  "src/test/java/loanxpress/IPA_OBL/IPA_OBL_submit.feature"
+			     //	"src/test/java/loanxpress/PD/pd_assign_lead.feature",
+                   // "src/test/java/loanxpress/PD/pd_view_processor.feature"
+				 
 
 		).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 

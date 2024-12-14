@@ -8,13 +8,14 @@ function() {
     
     if (env == 'stg') {
     BASE_URL = 'https://ilosapi-uat.capriglobal.in/ilosuser/v1';
+    BASE_URL_PD = 'https://ilosapi-uat.capriglobal.in/pd';
     BASE_URL1 = 'https://ilosapi-uat.capriglobal.in/ilos/v1';
     BASE_URL2 = 'https://ilosapi-uat.capriglobal.in/ilos/v2';
     TEST_DATA = 'file:src/test/resources/stg/';
     TEST_DATA1 = 'file:src/test/resources/';
     TEST_DATA1 = 'file:src/test/resources/';
-    OBJ_ID='674702265fc93aa97c94ca1d';
-    APP_ID='911039_64';
+    OBJ_ID='675d21e8aaea1516be57b47e';
+    APP_ID='911039_59';
     }
     else if (env == 'prod') {
     
