@@ -39,9 +39,11 @@ public class TestRunner {
 			//  "src/test/java/loanxpress/PD/pd_check_branch.feature",
 			// 	 "src/test/java/loanxpress/PD/pd_save_request.feature",
 			// 	 "src/test/java/loanxpress/PD/pd_submit_request.feature"
-                "src/test/java/loanxpress/PD/pd_metadata_list.feature"
-			
-			 
+            //   "src/test/java/loanxpress/PD/pd_metadata_list.feature"
+                 "src/test/java/loanxpress/PD/pd_metadata_list.feature",
+                 "src/test/java/loanxpress/PD/pd_responses_verification.feature",	
+                 "src/test/java/loanxpress/PD/pd_pdmeta_status.feature"
+	
 
 		).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
