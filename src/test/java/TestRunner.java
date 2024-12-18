@@ -46,9 +46,18 @@ public class TestRunner {
                 // "src/test/java/loanxpress/PD/pd_responses_questionnaire.feature",
                 // "src/test/java/loanxpress/PD/pd_pdmeta_submit.feature",
                 // "src/test/java/loanxpress/PD/pd_application_positive.feature"
-                   "src/test/java/loanxpress/technical/technical_filter_leads.feature"
-                
 
+
+                 //  "src/test/java/loanxpress/technical/technical_filter_leads.feature",
+                   //"src/test/java/loanxpress/technical/technical_self_assign.feature",
+                   "src/test/java/loanxpress/technical/technical_get_assigned_leads.feature",
+                   "src/test/java/loanxpress/technical/technical_get_property.feature",
+                   "src/test/java/loanxpress/technical/technical_vendor_list.feature"
+                   
+
+                
+                   
+                   
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
         generateReport(results);
