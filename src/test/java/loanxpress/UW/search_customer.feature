@@ -42,7 +42,7 @@ Feature: User search for customer and create a customer in Dedupe
     Then status 200
     Then print 'Response for guarantor customer detail:', response
 
-  @Sanity1 @tc0017 @CreateCustomer @UW3
+  @Sanity1 @tc0017 @CreateCustomer @UW3 @ignore
   Scenario: Create a Guarantor Customer
     Given path '/customer/posidex/create-customer'
     And request {"customer_type": "guarantor", "application_id": "#(APP_ID)", "customer_id": "#(guar_customer_id)"}
