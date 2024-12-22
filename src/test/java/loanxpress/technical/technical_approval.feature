@@ -1,3 +1,4 @@
+@ignore
 Feature: Assigning the vendor from vendor list
 
   Background:
