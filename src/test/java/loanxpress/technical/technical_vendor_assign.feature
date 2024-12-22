@@ -1,4 +1,4 @@
-Feature: Filter vendor list of the lead
+Feature: Assigning the vendor from vendor list
 
   Background:
     * url BASE_URL1
@@ -9,9 +9,9 @@ Feature: Filter vendor list of the lead
     * configure headers = { Authorization: '#(authToken)', Content-Type: 'application/json' }
 
   @Sanity1 @tc0013 @UW
-  Scenario Outline: Filtering vendor list
-    Given path '/technical/vendor-list'
-    And request {"application_id":"#(APP_ID)","property_id":1,"activity_code":"TECHNICAL_1"}
+  Scenario Outline: Assigning the vendor
+    Given path '/technical/assign-vendor'
+    And request {"application_id":"#(APP_ID)","property_id":1,"vendor_code":"AGT107","vendor_email":"rkvaluers@gmail.com","valuer_type":"EXTERNAL","vendor_name":"R.K KULHAR & CO2","activity_code":"TECHNICAL_1"}
     When method POST      
     Then status 200
     And print 'Filtered lead response:', response

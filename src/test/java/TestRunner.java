@@ -15,7 +15,8 @@ public class TestRunner {
                 // Feature paths
                 "src/test/java/loanxpress/apis_1/login.feature",
                 "src/test/java/loanxpress/apis_1/master_data.feature",
-                "src/test/java/loanxpress/apis_1/open_listing.feature",
+
+                 "src/test/java/loanxpress/apis_1/open_listing.feature",
                 "src/test/java/loanxpress/apis_1/lead_detail.feature",
                 "src/test/java/loanxpress/apis_1/edit_lead.feature",
                 "src/test/java/loanxpress/apis_1/mark_section.feature",
@@ -52,12 +53,15 @@ public class TestRunner {
                    "src/test/java/loanxpress/technical/technical_self_assign.feature",
                    "src/test/java/loanxpress/technical/technical_get_assigned_leads.feature",
                    "src/test/java/loanxpress/technical/technical_get_property.feature",
-                   "src/test/java/loanxpress/technical/technical_vendor_list.feature"
-                   
+                   "src/test/java/loanxpress/technical/technical_vendor_list.feature",
+                   "src/test/java/loanxpress/technical/technical_vendor_assign.feature",
+                   "src/test/java/loanxpress/technical/technical_report_submit.feature",                  
+                   "src/test/java/loanxpress/technical/technical_vetter_assign.feature",
+                   "src/test/java/loanxpress/technical/technical_property_update.feature",
+                   "src/test/java/loanxpress/technical/technical_valuation_submit.feature",
+                   "src/test/java/loanxpress/technical/technical_approval.feature",
+                   "src/test/java/loanxpress/technical/technical_credit_approval.feature"
 
-                
-                   
-                   
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
         generateReport(results);

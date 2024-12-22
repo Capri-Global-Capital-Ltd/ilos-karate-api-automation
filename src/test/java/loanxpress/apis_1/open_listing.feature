@@ -18,6 +18,9 @@ Feature: List of OPEN leads of CPU module
     * print 'Extracted objectid:', objectid
     * eval karate.set('objectid', objectid) // Set objectid in response for retrieval
     * print 'Response:', response
+        * def timeTaken = responseTime
+    * karate.log('Time taken for API:', timeTaken, 'ms')
+    * karate.embed({ "API Response Time (ms)": timeTaken }, 'application/json')
 
   Examples:
     | status | statuscode |
