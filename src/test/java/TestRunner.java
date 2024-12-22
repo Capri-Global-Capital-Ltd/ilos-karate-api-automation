@@ -15,7 +15,7 @@ public class TestRunner {
                 // Feature paths
                 "src/test/java/loanxpress/apis_1/login.feature",
                 // "src/test/java/loanxpress/apis_1/master_data.feature",
-                // "src/test/java/loanxpress/apis_1/open_listing.feature",
+                 "src/test/java/loanxpress/apis_1/open_listing.feature"
                 // "src/test/java/loanxpress/apis_1/lead_detail.feature",
                 // "src/test/java/loanxpress/apis_1/edit_lead.feature",
                 // "src/test/java/loanxpress/apis_1/mark_section.feature",
@@ -50,9 +50,9 @@ public class TestRunner {
 
                  //  "src/test/java/loanxpress/technical/technical_filter_leads.feature",
                    //"src/test/java/loanxpress/technical/technical_self_assign.feature",
-                   "src/test/java/loanxpress/technical/technical_get_assigned_leads.feature",
-                   "src/test/java/loanxpress/technical/technical_get_property.feature",
-                   "src/test/java/loanxpress/technical/technical_vendor_list.feature"
+                //    "src/test/java/loanxpress/technical/technical_get_assigned_leads.feature",
+                //    "src/test/java/loanxpress/technical/technical_get_property.feature",
+                //    "src/test/java/loanxpress/technical/technical_vendor_list.feature"
                    
 
                 

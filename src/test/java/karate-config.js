@@ -51,6 +51,14 @@ function() {
     karate.log('karate.env system property is: ', env);
     karate.log('BASE_URL = ', BASE_URL);
     
+   
+    karate.configure('afterScenario', function() {
+        if (karate.responseTime) {
+          karate.log('Time taken for last API call:', karate.responseTime, 'ms');
+          karate.embed({ "API Response Time (ms)": karate.responseTime }, 'application/json');
+        }
+      });
+
     return config;
     }
     
