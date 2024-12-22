@@ -14,7 +14,7 @@ Feature: User fetch the lead details
     And param application_id = APP_ID
     When method GET
     Then status <statuscode>
-  
+   
   Examples:
     | statuscode |
     | 200        |
