@@ -13,7 +13,7 @@ public class TestRunner {
     public void JUnitTestRunner() {
         Results results = Runner.path(
                 // Feature paths
-                "src/test/java/loanxpress/apis_1/login.feature",
+               "src/test/java/loanxpress/apis_1/login.feature",
                 "src/test/java/loanxpress/apis_1/master_data.feature",
 
                  "src/test/java/loanxpress/apis_1/open_listing.feature",
@@ -60,7 +60,11 @@ public class TestRunner {
                    "src/test/java/loanxpress/technical/technical_property_update.feature",
                    "src/test/java/loanxpress/technical/technical_valuation_submit.feature",
                    "src/test/java/loanxpress/technical/technical_approval.feature",
-                   "src/test/java/loanxpress/technical/technical_credit_approval.feature"
+                   "src/test/java/loanxpress/technical/technical_credit_approval.feature",
+
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
