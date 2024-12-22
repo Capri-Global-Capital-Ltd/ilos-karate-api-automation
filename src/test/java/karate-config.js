@@ -11,11 +11,13 @@ function() {
     BASE_URL_PD = 'https://ilosapi-uat.capriglobal.in/pd';
     BASE_URL1 = 'https://ilosapi-uat.capriglobal.in/ilos/v1';
     BASE_URL2 = 'https://ilosapi-uat.capriglobal.in/ilos/v2';
+    BASE_URL_TEC_REP = 'http://capri-core-nlb-pvt-d60aaf691e8006d3.elb.ap-south-1.amazonaws.com:8285';
     TEST_DATA = 'file:src/test/resources/stg/';
     TEST_DATA1 = 'file:src/test/resources/';
     TEST_DATA1 = 'file:src/test/resources/';
-    OBJ_ID='6731da966d3dec088f89270c';
-    APP_ID='911039_61';
+    OBJ_ID='6767aae49c3f64f23040355e';
+    APP_ID='911039_70';
+    APP_ID1 = APP_ID+"_1";
     }
     else if (env == 'prod') {
     
@@ -27,6 +29,7 @@ function() {
     TEST_DATA1 = 'file:src/test/resources/';
     OBJ_ID='672f056499cbe99929d8eba0';
     APP_ID='911039_56';
+    
     }
     else if (env == 'dev') {
     BASE_URL = 'https://reqres.in/api';
@@ -45,7 +48,9 @@ function() {
     BASE_URL: BASE_URL,
     BASE_URL1: BASE_URL1,
     BASE_URL2: BASE_URL2,
-    BASE_URL_PD: BASE_URL_PD
+    BASE_URL_PD: BASE_URL_PD,
+    BASE_URL_TEC_REP: BASE_URL_TEC_REP,
+    APP_ID1: APP_ID1
     };
     
     karate.log('karate.env system property is: ', env);
