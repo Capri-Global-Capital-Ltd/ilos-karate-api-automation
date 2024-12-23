@@ -68,7 +68,8 @@ public class TestRunner {
                "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
                "src/test/java/loanxpress/loan_eligibility/le_lead_hfl.feature",
                "src/test/java/loanxpress/loan_eligibility/le_eligible_values.feature",
-               "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature"
+               "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_save_lead.feature"
             
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
