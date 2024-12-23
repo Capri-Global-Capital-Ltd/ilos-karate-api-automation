@@ -61,9 +61,9 @@ public class TestRunner {
                 //    "src/test/java/loanxpress/technical/technical_approval.feature",
                 //    "src/test/java/loanxpress/technical/technical_credit_approval.feature",
 
-                   "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
-                   "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
-                   "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
+                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
+                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
+                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
