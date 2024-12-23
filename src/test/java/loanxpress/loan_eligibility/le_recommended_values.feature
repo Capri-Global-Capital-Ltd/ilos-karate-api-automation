@@ -9,8 +9,13 @@ Feature: User verifies the config of LE module
 
   @Sanity1 @tc0010
   Scenario: Verifying the config of LE module
-    Given path '/misc/lead-config'
-    And param section = 'loan_eligibility'
-    When method GET
+    Given path '/le/hfl/recommended-values/'+ OBJ_ID
+    And request {"pr":[]}
+    And param pd = 'home+loan+variable'
+    And param spc = 'none'
+    And param loan_amount = '1180746'
+    And param tenure = '216'
+    And param roi = '14'
+    When method POST
     Then status 200
     And print 'Response:', response

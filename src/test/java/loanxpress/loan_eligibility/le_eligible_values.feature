@@ -9,8 +9,9 @@ Feature: User verifies the config of LE module
 
   @Sanity1 @tc0010
   Scenario: Verifying the config of LE module
-    Given path '/misc/lead-config'
-    And param section = 'loan_eligibility'
+    Given path '/le/hfl/eligible-values/'+ OBJ_ID
+    And param pd = 'home+loan+variable'
+    And param spc = 'none'
     When method GET
     Then status 200
     And print 'Response:', response
