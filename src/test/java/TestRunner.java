@@ -65,12 +65,12 @@ public class TestRunner {
                 //    "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
                 //    "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
             
-            //     "src/test/java/loanxpress/loan_eligibility/le_lead_config.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_lead_hfl.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_eligible_values.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_save_lead.feature",
+                "src/test/java/loanxpress/loan_eligibility/le_lead_config.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_lead_hfl.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_eligible_values.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_save_lead.feature",
 
                "src/test/java/loanxpress/loan_eligibility/le_submit_lead.feature",
                "src/test/java/loanxpress/loan_eligibility/cs_insurance_details.feature",
