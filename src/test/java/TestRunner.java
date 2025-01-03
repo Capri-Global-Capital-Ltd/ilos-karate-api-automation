@@ -62,9 +62,9 @@ public class TestRunner {
                    "src/test/java/loanxpress/technical/technical_approval.feature",
                    "src/test/java/loanxpress/technical/technical_credit_approval.feature",
 
-                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
-                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
-                //    "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature",
             
                 "src/test/java/loanxpress/loan_eligibility/le_lead_config.feature",
                "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
