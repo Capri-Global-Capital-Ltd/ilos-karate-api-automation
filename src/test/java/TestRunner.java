@@ -13,9 +13,8 @@ public class TestRunner {
     public void JUnitTestRunner() {
         Results results = Runner.path(
                 // Feature paths
-               "src/test/java/loanxpress/apis_1/login.feature",
+                "src/test/java/loanxpress/apis_1/login.feature",
                 "src/test/java/loanxpress/apis_1/master_data.feature",
-
                  "src/test/java/loanxpress/apis_1/open_listing.feature",
                 "src/test/java/loanxpress/apis_1/lead_detail.feature",
                 "src/test/java/loanxpress/apis_1/edit_lead.feature",
@@ -64,20 +63,26 @@ public class TestRunner {
 
                    "src/test/java/loanxpress/Income_Analysis/income_analysis_lead_detail.feature",
                    "src/test/java/loanxpress/Income_Analysis/income_analysis_nip.feature",
-                   "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature"
+                   "src/test/java/loanxpress/Income_Analysis/income_analysis_submit.feature",
             
-            //     "src/test/java/loanxpress/loan_eligibility/le_lead_config.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_lead_hfl.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_eligible_values.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/le_save_lead.feature",
+                "src/test/java/loanxpress/loan_eligibility/le_lead_config.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_hard_stop.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_lead_hfl.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_eligible_values.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_recommended_values.feature",
+               "src/test/java/loanxpress/loan_eligibility/le_save_lead.feature",
 
-            //    "src/test/java/loanxpress/loan_eligibility/le_submit_lead.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/cs_insurance_details.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/cs_fees_and_charges.feature",
-            //    "src/test/java/loanxpress/loan_eligibility/cs_recommend.feature"//https://codeshare.io/EkyNXp [LE]
-               
+               "src/test/java/loanxpress/loan_eligibility/le_submit_lead.feature",
+               "src/test/java/loanxpress/loan_eligibility/cs_insurance_details.feature",
+               "src/test/java/loanxpress/loan_eligibility/cs_fees_and_charges.feature",
+               "src/test/java/loanxpress/loan_eligibility/cs_recommend.feature",//https://codeshare.io/EkyNXp [LE]  https://codeshare.io/NKQl68
+
+              "src/test/java/loanxpress/Credit_Sanction/cs_jch_login.feature", 
+              "src/test/java/loanxpress/Credit_Sanction/cs_reassign.feature",
+              "src/test/java/loanxpress/Credit_Sanction/cs_update_deviation.feature",
+              "src/test/java/loanxpress/Credit_Sanction/cs_save_lead.feature",
+              "src/test/java/loanxpress/Credit_Sanction/cs_submit_lead.feature",
+              "src/test/java/loanxpress/Credit_Sanction/cs_submit2.feature"
             
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
