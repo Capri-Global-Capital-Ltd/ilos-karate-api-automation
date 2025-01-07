@@ -42,7 +42,7 @@ public class TestRunner {
                 "src/test/java/loanxpress/PD/pd_metadata_list.feature",
                 "src/test/java/loanxpress/PD/pd_responses_verification.feature",
                 "src/test/java/loanxpress/PD/pd_pdmeta_status.feature",
-                "src/test/java/loanxpress/PD/pd_owner_login.feature",
+                 "src/test/java/loanxpress/PD/pd_owner_login.feature",
                 "src/test/java/loanxpress/PD/pd_responses_questionnaire.feature",
                 "src/test/java/loanxpress/PD/pd_pdmeta_submit.feature",
                 "src/test/java/loanxpress/PD/pd_application_positive.feature",
@@ -82,8 +82,22 @@ public class TestRunner {
               "src/test/java/loanxpress/Credit_Sanction/cs_update_deviation.feature",
               "src/test/java/loanxpress/Credit_Sanction/cs_save_lead.feature",
               "src/test/java/loanxpress/Credit_Sanction/cs_submit_lead.feature",
-              "src/test/java/loanxpress/Credit_Sanction/cs_submit2.feature"
+              "src/test/java/loanxpress/Credit_Sanction/cs_submit2.feature",
+
+              "src/test/java/loanxpress/commercial_approval/BM_reassign.feature",
+              "src/test/java/loanxpress/commercial_approval/BM_login.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_save.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_pricing.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_submit.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_add_nominee.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_pricing2.feature",
+              "src/test/java/loanxpress/commercial_approval/ZSM_login.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_save2.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_pricing3.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_submit2.feature",
+              "src/test/java/loanxpress/commercial_approval/commercial_pricing4.feature"
             
+              
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution
 
