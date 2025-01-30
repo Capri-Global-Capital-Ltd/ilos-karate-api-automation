@@ -15,8 +15,8 @@ function() {
   TEST_DATA = 'file:src/test/resources/stg/';
   TEST_DATA1 = 'file:src/test/resources/';
   TEST_DATA1 = 'file:src/test/resources/';
-  OBJ_ID='67889cf22bca34c5fdcc15e0';
-  APP_ID='91103_8';
+  OBJ_ID='67889d002bca34c5fdcc15e2';
+  APP_ID='91103_10';
   APP_ID1 = APP_ID+"_1";
   }
   else if (env == 'prod') {
