@@ -103,8 +103,10 @@ public class TestRunner {
               "src/test/java/loanxpress/disbursement/disb_self_assign.feature",
               "src/test/java/loanxpress/disbursement/disb_verify_IFSC.feature",
               "src/test/java/loanxpress/disbursement/disb_verify_account_number.feature",
-              "src/test/java/loanxpress/disbursement/disb_favouring_details.feature"
-            
+              "src/test/java/loanxpress/disbursement/disb_favouring_details.feature",    
+             "src/test/java/loanxpress/disbursement/disb_repay_bank_acc.feature",
+              "src/test/java/loanxpress/disbursement/disb_generate_docs.feature"
+        
               
 
         ).tags(System.getProperty("karate.tag")).parallel(THREAD_COUNT); // Set to 1 for sequential execution

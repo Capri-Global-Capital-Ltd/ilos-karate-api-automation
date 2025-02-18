@@ -15,7 +15,7 @@ function() {
     TEST_DATA = 'file:src/test/resources/stg/';
     TEST_DATA1 = 'file:src/test/resources/';
     TEST_DATA1 = 'file:src/test/resources/';
-    OBJ_ID='67b1b10aa1b3a54545cde9cd';
+    OBJ_ID='67b1b5e0a1b3a54545cde9d2';
     APP_ID='91103_16';
     APP_ID1 = APP_ID+"_1";
     }
