@@ -13,7 +13,7 @@ public class TestRunner {
     public void JUnitTestRunner() {
         Results results = Runner.path(
                 // Feature paths
-           //     "src/test/java/loanxpress/apis_1/login.feature",
+            //    "src/test/java/loanxpress/apis_1/login.feature",
             //     "src/test/java/loanxpress/apis_1/master_data.feature",
             //      "src/test/java/loanxpress/apis_1/open_listing.feature",
             //     "src/test/java/loanxpress/apis_1/lead_detail.feature",
@@ -44,7 +44,7 @@ public class TestRunner {
             //     "src/test/java/loanxpress/PD/pd_metadata_list.feature",
             //     "src/test/java/loanxpress/PD/pd_responses_verification.feature",
             //     "src/test/java/loanxpress/PD/pd_pdmeta_status.feature",
-                  "src/test/java/loanxpress/PD/pd_owner_login.feature",
+                   "src/test/java/loanxpress/PD/pd_owner_login.feature",
             //     "src/test/java/loanxpress/PD/pd_responses_questionnaire.feature",
             //     "src/test/java/loanxpress/PD/pd_pdmeta_submit.feature",
             //     "src/test/java/loanxpress/PD/pd_application_positive.feature",
@@ -104,8 +104,12 @@ public class TestRunner {
               "src/test/java/loanxpress/disbursement/disb_verify_IFSC.feature",
               "src/test/java/loanxpress/disbursement/disb_verify_account_number.feature",
               "src/test/java/loanxpress/disbursement/disb_favouring_details.feature",    
-             "src/test/java/loanxpress/disbursement/disb_repay_bank_acc.feature",
+              "src/test/java/loanxpress/disbursement/disb_repayment_bank_acc.feature",
+              "src/test/java/loanxpress/disbursement/disb_repay_bank_acc.feature",
               "src/test/java/loanxpress/disbursement/disb_generate_docs.feature"
+
+              
+              
         
               
 
