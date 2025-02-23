@@ -100,16 +100,16 @@ public class TestRunner {
             //   "src/test/java/loanxpress/commercial_approval/commercial_pricing4.feature"
 
 
-              "src/test/java/loanxpress/disbursement/disb_self_assign.feature",
-              "src/test/java/loanxpress/disbursement/disb_verify_IFSC.feature",
-              "src/test/java/loanxpress/disbursement/disb_verify_account_number.feature",
-              "src/test/java/loanxpress/disbursement/disb_favouring_details.feature",    
-              "src/test/java/loanxpress/disbursement/disb_repayment_bank_acc.feature",
-              "src/test/java/loanxpress/disbursement/disb_repay_bank_acc.feature",
-              "src/test/java/loanxpress/disbursement/disb_generate_docs.feature"
-
-              
-              
+            //   "src/test/java/loanxpress/disbursement/disb_self_assign.feature",
+            //   "src/test/java/loanxpress/disbursement/disb_verify_IFSC.feature",
+            //   "src/test/java/loanxpress/disbursement/disb_verify_account_number.feature",
+            //   "src/test/java/loanxpress/disbursement/disb_favouring_details.feature",    
+            //   "src/test/java/loanxpress/disbursement/disb_repayment_bank_acc.feature",
+            //   "src/test/java/loanxpress/disbursement/disb_repay_bank_acc.feature",
+              "src/test/java/loanxpress/disbursement/disb_generate_docs.feature",
+              "src/test/java/loanxpress/disbursement/disb_generate_upload_url.feature",
+              "src/test/java/loanxpress/disbursement/disb_document _handler.feature",
+              "src/test/java/loanxpress/disbursement/disb_manual-esign.feature"
         
               
 
