@@ -1,7 +1,7 @@
 Feature: Repayment Bank Account Details
 
   Background:
-    * url 'https://ilosapi-uat.capriglobal.in/ilos/v1'
+    * url BASE_URL1
     * def result = call read('classpath:loanxpress/apis_1/login.feature')
     * def token = result.response.dt.token
     * configure headers = { Authorization: '#(token)', accept: 'application/json' }
